@@ -22,6 +22,14 @@
       <version>${gatling.version}</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>io.gatling</groupId>
+      <artifactId>gatling-maven-plugin</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <!--<systemPath>/home/vic/ressort/gatling-maven-plugin-demo/gatling-mqtt.jar</systemPath>-->
+      <systemPath>/staging/jnw/chen116/gatling-mqtt.jar</systemPath>
+    </dependency>
   </dependencies>
 
   <build>
