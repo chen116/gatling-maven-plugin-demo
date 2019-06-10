@@ -11,9 +11,9 @@ import com.github.mnogu.gatling.mqtt.Predef._
 class BasicSimulation extends Simulation {
 
 
-  val mqttConfiguration = mqtt()
+  val mqttConfiguration = mqtt.host("tcp://localhost:1883")
     // MQTT broker
-    .host("tcp://localhost:1883")
+//    .host("tcp://localhost:1883")
   val connect = exec(mqtt("connect")
     .connect())
   // send 100 publish MQTT messages
