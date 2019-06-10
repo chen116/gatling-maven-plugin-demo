@@ -34,7 +34,7 @@ class BasicSimulation extends Simulation {
   setUp(scn
     // linearly connect 10 devices over 1 second
     // and send 100 publish messages
-    .inject(rampUsers(10) over (1 seconds))
+    .inject(rampUsers(10) during (1 seconds))
   ).protocols(mqttConfiguration)
 //  val httpProtocol = http
 //    .baseUrl("http://computer-database.gatling.io") // Here is the root for all relative URLs
